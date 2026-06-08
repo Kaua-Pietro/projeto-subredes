@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 import {
   calculateSubnet,
@@ -80,7 +80,7 @@ export default function App() {
   };
   const splitData = getSplitSubnets();
 
-  const InfoCard = ({ label, value, icon }: { label: string; value: string | number; icon?: string }) => (
+  const InfoCard = ({ label, value}: { label: string; value: string | number; icon?: string }) => (
     <div className="card">
       <div className="card-label">{label}</div>
       <div className="card-value">{value}</div>
